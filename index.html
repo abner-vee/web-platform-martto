@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to U-Shop @ MSU</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to U-Shop @ MSU</h1>
+      <form action="" method="post">
+        <div>
+          <label for="name"
+            >Buyer's Name: <input type="text" name="name" id="name" required
+          /></label>
+          <label for="buyer-state"
+            >Phone:
+            <input type="text" name="buyer-state" id="buyer-state" required
+          /></label>
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Product's Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Twisties</td>
+                <td>RM 3.00</td>
+                <td>
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Cadbury's Chocolate</td>
+                <td>RM 3.50</td>
+                <td>
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Cadbury's Nut Chocolate</td>
+                <td>RM 4.50</td>
+                <td>
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Cloud 9</td>
+                <td>RM 0.30</td>
+                <td>
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h6>Payment Method</h6>
+          <label for="cash"
+            >Cash on Delivery
+            <input type="radio" name="cash" id="cash" value="Cash" required
+          /></label>
+          <label for="visa"
+            >Visa<input
+              type="radio"
+              name="visa"
+              id="visa"
+              value="Visa"
+              required
+          /></label>
+          <label for="master-card"
+            >Master Card
+            <input
+              type="radio"
+              name="master-card"
+              id="master-card"
+              value="Master Card"
+              required
+          /></label>
+        </div>
+        <div class="button-container">
+          <button type="submit">Submit Order</button>
+          <button type="button">Cancel Order</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
